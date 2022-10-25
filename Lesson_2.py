@@ -72,4 +72,3 @@ def Exp_Other():
     list1 = [1, 2, 3, 2, 0]
     list2 = [5, 1, 2, 7, 3, 2]
     print([value for value in list1 if value in list2])
-
