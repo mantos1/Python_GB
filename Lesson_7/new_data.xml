@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<root>
+    <item name = "item1">
+        <name >Ира</name>
+        <phone>9887654123</phone>
+    </item>
+    <item name = "item2">
+        <name>Оля</name>
+        <phone>89069988771</phone>
+    </item>
+    <item name = "item3">
+        <name>ВоВа</name>
+        <phone>89072345671</phone>
+    </item>
+</root>
