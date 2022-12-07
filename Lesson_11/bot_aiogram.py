@@ -68,7 +68,7 @@ async def command_answer_goroscope(message: types.Message):
 
     key_client = InlineKeyboardMarkup()
     key_client.row(b1,b2,b3).row(b4,b5,b6).row(b7,b8,b9).row(b10,b11,b12)
-    await  message.answer(message.text)
+    # await  message.answer(message.text)
     # await message.answer_sticker(r'https://tlgrm.ru/_/stickers/061/2ac/0612acc2-f6fd-3470-83df-429ee8ba3d3b/192/25.webp',reply_markup=key_client)
     # await bot.send_sticker(chat_id=message.from_user.id, sticker=r"CAACAgIAAxkBAAED7aNiCmNgcLCdHjYZIU2Yf9sLNxTiEAACVhQAAhzIoEuxFOaAT2TuaSME")
     await bot.send_sticker(chat_id=message.chat.id, sticker = r"CAACAgIAAxkBAAEGt2ljj9gsDlQZi_3czbxgnBNNKnUupQAClxoAAmpUOUigbPi998pdDisE",reply_markup=key_client)
