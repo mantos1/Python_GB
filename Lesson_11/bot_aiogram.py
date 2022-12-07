@@ -35,7 +35,7 @@ async def command_start(message: types.Message):
         bb2 = KeyboardButton("/Глянуть_гороскоп")
         keyboard_client = ReplyKeyboardMarkup(resize_keyboard=True,one_time_keyboard=True)
         keyboard_client.row(bb1,bb2)
-        await bot.send_sticker(chat_id=message.chat.id, sticker = r"CAACAgIAAxkBAAEGt2tjj9hOfIP35jdACg7xuKEIMSJZyQACgxQAAmFXSEjQI8I-g2gtjysE")
+        await bot.send_sticker(chat_id=message.from_user.id, sticker = r"CAACAgIAAxkBAAEGt2tjj9hOfIP35jdACg7xuKEIMSJZyQACgxQAAmFXSEjQI8I-g2gtjysE")
         await bot.send_message(message.from_user.id, 'Не прошло и года...!', reply_markup=keyboard_client)
         await message.delete()
     except:
